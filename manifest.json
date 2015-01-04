@@ -1,8 +1,8 @@
 {
-	"name": "SAMPLE_NAME",
-	"version": "0.1",
+	"name": "Would -HAVE- damnit!",
+	"version": "0.0.1",
 	"manifest_version" : 2,
-	"description": "SAMPLE_DESCRIPTION",
+	"description": "Would/Could/Should -HAVE- (not OF)",
 	"background" : {
 		"page" : "background.html"
 	},
@@ -17,7 +17,7 @@
 	},
 	"content_scripts": [
 	{
-		"matches": ["http://*/*"],
+		"matches": ["http://*/*", "https://*/*"],
 		"js": ["lib/jquery-2.1.1.min.js","scripts/main.js"],
 		"run_at": "document_idle"
 	}

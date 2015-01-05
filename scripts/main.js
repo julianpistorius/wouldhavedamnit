@@ -39,7 +39,7 @@ chrome.extension.sendMessage({}, function (response) {
           var pattern = patterns[i];
           if (entered_string.indexOf(pattern) > -1) {
             console.log('Found pattern: ' + pattern);
-            alert('No! "HAVE" not "OF"! Damnit!');
+            setTimeout(function(){alert('No! "HAVE" not "OF"! Damnit!')}, 500);
             entered_string = '';
             return false;
           }

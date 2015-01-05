@@ -5,7 +5,7 @@ chrome.extension.sendMessage({}, function (response) {
 
       // ----------------------------------------------------------
       // This part of the script triggers when page is done loading
-      console.log("Hello. This message was sent from scripts/main.js");
+      //console.log("Hello. This message was sent from scripts/main.js");
 
       patterns = ['OULD OF ', 'OULDN\'T OF '];
       max_pattern_length = 11;
@@ -20,7 +20,7 @@ chrome.extension.sendMessage({}, function (response) {
 
       function add_character(event) {
         key_char = String.fromCharCode(event.charCode).toUpperCase();
-        console.log(key_char);
+        //console.log(key_char);
         entered_string += key_char;
         trim_string_to_length();
         //console.log(entered_string);
